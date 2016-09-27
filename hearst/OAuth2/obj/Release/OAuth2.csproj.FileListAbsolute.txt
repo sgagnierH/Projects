@@ -1,0 +1,12 @@
+C:\Projects\hearst\OAuth2\bin\Release\OAuth2.dll.config
+C:\Projects\hearst\OAuth2\bin\Release\OAuth2.dll
+C:\Projects\hearst\OAuth2\bin\Release\OAuth2.pdb
+C:\Projects\hearst\OAuth2\bin\Release\BouncyCastle.Crypto.dll
+C:\Projects\hearst\OAuth2\bin\Release\Google.Ads.Common.dll
+C:\Projects\hearst\OAuth2\bin\Release\Google.Dfp.dll
+C:\Projects\hearst\OAuth2\bin\Release\BouncyCastle.Crypto.pdb
+C:\Projects\hearst\OAuth2\bin\Release\Google.Ads.Common.xml
+C:\Projects\hearst\OAuth2\bin\Release\Google.Dfp.xml
+C:\Projects\hearst\OAuth2\obj\Release\OAuth2.dll
+C:\Projects\hearst\OAuth2\obj\Release\OAuth2.pdb
+C:\Projects\hearst\OAuth2\obj\Release\OAuth2.csprojResolveAssemblyReference.cache

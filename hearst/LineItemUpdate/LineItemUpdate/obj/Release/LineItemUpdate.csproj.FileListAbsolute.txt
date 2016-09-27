@@ -1,0 +1,1 @@
+C:\Projects\hearst\LineItemUpdate\LineItemUpdate\bin\Release\LineItemUpdate.exe.config

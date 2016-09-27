@@ -1,0 +1,815 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Google.Apis.AdExchangeSeller.v1</name>
+    </assembly>
+    <members>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerService">
+            <summary>The AdExchangeSeller Service.</summary>
+        </member>
+        <member name="F:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerService.Version">
+            <summary>The API version.</summary>
+        </member>
+        <member name="F:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerService.DiscoveryVersionUsed">
+            <summary>The discovery version used to generate this service.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerService.#ctor">
+            <summary>Constructs a new service.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerService.#ctor(Google.Apis.Services.BaseClientService.Initializer)">
+            <summary>Constructs a new service.</summary>
+            <param name="initializer">The service initializer.</param>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerService.Features">
+            <summary>Gets the service supported features.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerService.Name">
+            <summary>Gets the service name.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerService.BaseUri">
+            <summary>Gets the service base URI.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerService.BasePath">
+            <summary>Gets the service base path.</summary>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerService.Scope">
+            <summary>Available OAuth 2.0 scopes for use with the Ad Exchange Seller API.</summary>
+        </member>
+        <member name="F:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerService.Scope.AdexchangeSeller">
+            <summary>View and manage your Ad Exchange data</summary>
+        </member>
+        <member name="F:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerService.Scope.AdexchangeSellerReadonly">
+            <summary>View your Ad Exchange data</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerService.Adclients">
+            <summary>Gets the Adclients resource.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerService.Adunits">
+            <summary>Gets the Adunits resource.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerService.Customchannels">
+            <summary>Gets the Customchannels resource.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerService.Reports">
+            <summary>Gets the Reports resource.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerService.Urlchannels">
+            <summary>Gets the Urlchannels resource.</summary>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerBaseServiceRequest`1">
+            <summary>A base abstract class for AdExchangeSeller requests.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerBaseServiceRequest`1.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new AdExchangeSellerBaseServiceRequest instance.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerBaseServiceRequest`1.Alt">
+            <summary>Data format for the response.</summary>
+            [default: json]
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerBaseServiceRequest`1.AltEnum">
+            <summary>Data format for the response.</summary>
+        </member>
+        <member name="F:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerBaseServiceRequest`1.AltEnum.Csv">
+            <summary>Responses with Content-Type of text/csv</summary>
+        </member>
+        <member name="F:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerBaseServiceRequest`1.AltEnum.Json">
+            <summary>Responses with Content-Type of application/json</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerBaseServiceRequest`1.Fields">
+            <summary>Selector specifying which fields to include in a partial response.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerBaseServiceRequest`1.Key">
+            <summary>API key. Your API key identifies your project and provides you with API access, quota, and reports.
+            Required unless you provide an OAuth 2.0 token.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerBaseServiceRequest`1.OauthToken">
+            <summary>OAuth 2.0 token for the current user.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerBaseServiceRequest`1.PrettyPrint">
+            <summary>Returns response with indentations and line breaks.</summary>
+            [default: true]
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerBaseServiceRequest`1.QuotaUser">
+            <summary>Available to use for quota purposes for server-side applications. Can be any arbitrary string
+            assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerBaseServiceRequest`1.UserIp">
+            <summary>IP address of the site where the request originates. Use this if you want to enforce per-user
+            limits.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.AdExchangeSellerBaseServiceRequest`1.InitParameters">
+            <summary>Initializes AdExchangeSeller parameter list.</summary>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.AdclientsResource">
+            <summary>The "adclients" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.AdExchangeSeller.v1.AdclientsResource.service">
+            <summary>The service which this resource belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.AdclientsResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.AdclientsResource.List">
+            <summary>List all ad clients in this Ad Exchange account.</summary>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.AdclientsResource.ListRequest">
+            <summary>List all ad clients in this Ad Exchange account.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.AdclientsResource.ListRequest.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdclientsResource.ListRequest.MaxResults">
+            <summary>The maximum number of ad clients to include in the response, used for paging.</summary>
+            [minimum: 0]
+            [maximum: 10000]
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdclientsResource.ListRequest.PageToken">
+            <summary>A continuation token, used to page through ad clients. To retrieve the next page, set this
+            parameter to the value of "nextPageToken" from the previous response.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdclientsResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdclientsResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdclientsResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.AdclientsResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.AdunitsResource">
+            <summary>The "adunits" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.AdExchangeSeller.v1.AdunitsResource.service">
+            <summary>The service which this resource belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.AdunitsResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.Customchannels">
+            <summary>Gets the Customchannels resource.</summary>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.AdunitsResource.CustomchannelsResource">
+            <summary>The "customchannels" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.AdExchangeSeller.v1.AdunitsResource.CustomchannelsResource.service">
+            <summary>The service which this resource belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.AdunitsResource.CustomchannelsResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.AdunitsResource.CustomchannelsResource.List(System.String,System.String)">
+            <summary>List all custom channels which the specified ad unit belongs to.</summary>
+            <param name="adClientId">Ad client which contains the ad unit.</param>
+            <param name="adUnitId">Ad unit for
+            which to list custom channels.</param>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.AdunitsResource.CustomchannelsResource.ListRequest">
+            <summary>List all custom channels which the specified ad unit belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.AdunitsResource.CustomchannelsResource.ListRequest.#ctor(Google.Apis.Services.IClientService,System.String,System.String)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.CustomchannelsResource.ListRequest.AdClientId">
+            <summary>Ad client which contains the ad unit.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.CustomchannelsResource.ListRequest.AdUnitId">
+            <summary>Ad unit for which to list custom channels.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.CustomchannelsResource.ListRequest.MaxResults">
+            <summary>The maximum number of custom channels to include in the response, used for
+            paging.</summary>
+            [minimum: 0]
+            [maximum: 10000]
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.CustomchannelsResource.ListRequest.PageToken">
+            <summary>A continuation token, used to page through custom channels. To retrieve the next page, set
+            this parameter to the value of "nextPageToken" from the previous response.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.CustomchannelsResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.CustomchannelsResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.CustomchannelsResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.AdunitsResource.CustomchannelsResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.AdunitsResource.Get(System.String,System.String)">
+            <summary>Gets the specified ad unit in the specified ad client.</summary>
+            <param name="adClientId">Ad client for which to get the ad unit.</param>
+            <param name="adUnitId">Ad unit to
+            retrieve.</param>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.AdunitsResource.GetRequest">
+            <summary>Gets the specified ad unit in the specified ad client.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.AdunitsResource.GetRequest.#ctor(Google.Apis.Services.IClientService,System.String,System.String)">
+            <summary>Constructs a new Get request.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.GetRequest.AdClientId">
+            <summary>Ad client for which to get the ad unit.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.GetRequest.AdUnitId">
+            <summary>Ad unit to retrieve.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.GetRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.GetRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.GetRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.AdunitsResource.GetRequest.InitParameters">
+            <summary>Initializes Get parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.AdunitsResource.List(System.String)">
+            <summary>List all ad units in the specified ad client for this Ad Exchange account.</summary>
+            <param name="adClientId">Ad client for which to list ad units.</param>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.AdunitsResource.ListRequest">
+            <summary>List all ad units in the specified ad client for this Ad Exchange account.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.AdunitsResource.ListRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.ListRequest.AdClientId">
+            <summary>Ad client for which to list ad units.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.ListRequest.IncludeInactive">
+            <summary>Whether to include inactive ad units. Default: true.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.ListRequest.MaxResults">
+            <summary>The maximum number of ad units to include in the response, used for paging.</summary>
+            [minimum: 0]
+            [maximum: 10000]
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.ListRequest.PageToken">
+            <summary>A continuation token, used to page through ad units. To retrieve the next page, set this
+            parameter to the value of "nextPageToken" from the previous response.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.AdunitsResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.AdunitsResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource">
+            <summary>The "customchannels" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.service">
+            <summary>The service which this resource belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.Adunits">
+            <summary>Gets the Adunits resource.</summary>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.AdunitsResource">
+            <summary>The "adunits" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.AdunitsResource.service">
+            <summary>The service which this resource belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.AdunitsResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.AdunitsResource.List(System.String,System.String)">
+            <summary>List all ad units in the specified custom channel.</summary>
+            <param name="adClientId">Ad client which contains the custom channel.</param>
+            <param
+            name="customChannelId">Custom channel for which to list ad units.</param>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.AdunitsResource.ListRequest">
+            <summary>List all ad units in the specified custom channel.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.AdunitsResource.ListRequest.#ctor(Google.Apis.Services.IClientService,System.String,System.String)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.AdunitsResource.ListRequest.AdClientId">
+            <summary>Ad client which contains the custom channel.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.AdunitsResource.ListRequest.CustomChannelId">
+            <summary>Custom channel for which to list ad units.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.AdunitsResource.ListRequest.IncludeInactive">
+            <summary>Whether to include inactive ad units. Default: true.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.AdunitsResource.ListRequest.MaxResults">
+            <summary>The maximum number of ad units to include in the response, used for paging.</summary>
+            [minimum: 0]
+            [maximum: 10000]
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.AdunitsResource.ListRequest.PageToken">
+            <summary>A continuation token, used to page through ad units. To retrieve the next page, set this
+            parameter to the value of "nextPageToken" from the previous response.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.AdunitsResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.AdunitsResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.AdunitsResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.AdunitsResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.Get(System.String,System.String)">
+            <summary>Get the specified custom channel from the specified ad client.</summary>
+            <param name="adClientId">Ad client which contains the custom channel.</param>
+            <param
+            name="customChannelId">Custom channel to retrieve.</param>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.GetRequest">
+            <summary>Get the specified custom channel from the specified ad client.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.GetRequest.#ctor(Google.Apis.Services.IClientService,System.String,System.String)">
+            <summary>Constructs a new Get request.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.GetRequest.AdClientId">
+            <summary>Ad client which contains the custom channel.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.GetRequest.CustomChannelId">
+            <summary>Custom channel to retrieve.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.GetRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.GetRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.GetRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.GetRequest.InitParameters">
+            <summary>Initializes Get parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.List(System.String)">
+            <summary>List all custom channels in the specified ad client for this Ad Exchange account.</summary>
+            <param name="adClientId">Ad client for which to list custom channels.</param>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.ListRequest">
+            <summary>List all custom channels in the specified ad client for this Ad Exchange account.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.ListRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.ListRequest.AdClientId">
+            <summary>Ad client for which to list custom channels.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.ListRequest.MaxResults">
+            <summary>The maximum number of custom channels to include in the response, used for paging.</summary>
+            [minimum: 0]
+            [maximum: 10000]
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.ListRequest.PageToken">
+            <summary>A continuation token, used to page through custom channels. To retrieve the next page, set this
+            parameter to the value of "nextPageToken" from the previous response.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.CustomchannelsResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.ReportsResource">
+            <summary>The "reports" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.AdExchangeSeller.v1.ReportsResource.service">
+            <summary>The service which this resource belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.ReportsResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.Saved">
+            <summary>Gets the Saved resource.</summary>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource">
+            <summary>The "saved" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.service">
+            <summary>The service which this resource belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.Generate(System.String)">
+            <summary>Generate an Ad Exchange report based on the saved report ID sent in the query
+            parameters.</summary>
+            <param name="savedReportId">The saved report to retrieve.</param>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.GenerateRequest">
+            <summary>Generate an Ad Exchange report based on the saved report ID sent in the query
+            parameters.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.GenerateRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new Generate request.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.GenerateRequest.SavedReportId">
+            <summary>The saved report to retrieve.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.GenerateRequest.Locale">
+            <summary>Optional locale to use for translating report output to a local language. Defaults to
+            "en_US" if not specified.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.GenerateRequest.MaxResults">
+            <summary>The maximum number of rows of report data to return.</summary>
+            [minimum: 0]
+            [maximum: 50000]
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.GenerateRequest.StartIndex">
+            <summary>Index of the first row of report data to return.</summary>
+            [minimum: 0]
+            [maximum: 5000]
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.GenerateRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.GenerateRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.GenerateRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.GenerateRequest.InitParameters">
+            <summary>Initializes Generate parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.List">
+            <summary>List all saved reports in this Ad Exchange account.</summary>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.ListRequest">
+            <summary>List all saved reports in this Ad Exchange account.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.ListRequest.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.ListRequest.MaxResults">
+            <summary>The maximum number of saved reports to include in the response, used for paging.</summary>
+            [minimum: 0]
+            [maximum: 100]
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.ListRequest.PageToken">
+            <summary>A continuation token, used to page through saved reports. To retrieve the next page, set
+            this parameter to the value of "nextPageToken" from the previous response.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.ReportsResource.SavedResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.ReportsResource.Generate(System.String,System.String)">
+             <summary>Generate an Ad Exchange report based on the report request sent in the query parameters. Returns
+             the result as JSON; to retrieve output in CSV format specify "alt=csv" as a query parameter.</summary>
+             <param name="startDate">Start of the date range to report on in "YYYY-MM-DD" format, inclusive.</param>
+            
+             <param name="endDate">End of the date range to report on in "YYYY-MM-DD" format, inclusive.</param>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.ReportsResource.GenerateRequest">
+            <summary>Generate an Ad Exchange report based on the report request sent in the query parameters. Returns
+            the result as JSON; to retrieve output in CSV format specify "alt=csv" as a query parameter.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.ReportsResource.GenerateRequest.#ctor(Google.Apis.Services.IClientService,System.String,System.String)">
+            <summary>Constructs a new Generate request.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.GenerateRequest.StartDate">
+            <summary>Start of the date range to report on in "YYYY-MM-DD" format, inclusive.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.GenerateRequest.EndDate">
+            <summary>End of the date range to report on in "YYYY-MM-DD" format, inclusive.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.GenerateRequest.Dimension">
+            <summary>Dimensions to base the report on.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.GenerateRequest.Filter">
+            <summary>Filters to be run on the report.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.GenerateRequest.Locale">
+            <summary>Optional locale to use for translating report output to a local language. Defaults to "en_US"
+            if not specified.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.GenerateRequest.MaxResults">
+            <summary>The maximum number of rows of report data to return.</summary>
+            [minimum: 0]
+            [maximum: 50000]
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.GenerateRequest.Metric">
+            <summary>Numeric columns to include in the report.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.GenerateRequest.Sort">
+            <summary>The name of a dimension or metric to sort the resulting report on, optionally prefixed with "+"
+            to sort ascending or "-" to sort descending. If no prefix is specified, the column is sorted
+            ascending.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.GenerateRequest.StartIndex">
+            <summary>Index of the first row of report data to return.</summary>
+            [minimum: 0]
+            [maximum: 5000]
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.GenerateRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.GenerateRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.GenerateRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.ReportsResource.GenerateRequest.InitParameters">
+            <summary>Initializes Generate parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.ReportsResource.GenerateRequest.MediaDownloader">
+            <summary>Gets the media downloader.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.ReportsResource.GenerateRequest.Download(System.IO.Stream)">
+            <summary>Synchronously download the media into the given stream.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.ReportsResource.GenerateRequest.DownloadAsync(System.IO.Stream)">
+            <summary>Asynchronously download the media into the given stream.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.ReportsResource.GenerateRequest.DownloadAsync(System.IO.Stream,System.Threading.CancellationToken)">
+            <summary>Asynchronously download the media into the given stream.</summary>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.UrlchannelsResource">
+            <summary>The "urlchannels" collection of methods.</summary>
+        </member>
+        <member name="F:Google.Apis.AdExchangeSeller.v1.UrlchannelsResource.service">
+            <summary>The service which this resource belongs to.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.UrlchannelsResource.#ctor(Google.Apis.Services.IClientService)">
+            <summary>Constructs a new resource.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.UrlchannelsResource.List(System.String)">
+            <summary>List all URL channels in the specified ad client for this Ad Exchange account.</summary>
+            <param name="adClientId">Ad client for which to list URL channels.</param>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.UrlchannelsResource.ListRequest">
+            <summary>List all URL channels in the specified ad client for this Ad Exchange account.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.UrlchannelsResource.ListRequest.#ctor(Google.Apis.Services.IClientService,System.String)">
+            <summary>Constructs a new List request.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.UrlchannelsResource.ListRequest.AdClientId">
+            <summary>Ad client for which to list URL channels.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.UrlchannelsResource.ListRequest.MaxResults">
+            <summary>The maximum number of URL channels to include in the response, used for paging.</summary>
+            [minimum: 0]
+            [maximum: 10000]
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.UrlchannelsResource.ListRequest.PageToken">
+            <summary>A continuation token, used to page through URL channels. To retrieve the next page, set this
+            parameter to the value of "nextPageToken" from the previous response.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.UrlchannelsResource.ListRequest.MethodName">
+            <summary>Gets the method name.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.UrlchannelsResource.ListRequest.HttpMethod">
+            <summary>Gets the HTTP method.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.UrlchannelsResource.ListRequest.RestPath">
+            <summary>Gets the REST path.</summary>
+        </member>
+        <member name="M:Google.Apis.AdExchangeSeller.v1.UrlchannelsResource.ListRequest.InitParameters">
+            <summary>Initializes List parameter list.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdClient.ArcOptIn">
+            <summary>Whether this ad client is opted in to ARC.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdClient.Id">
+            <summary>Unique identifier of this ad client.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdClient.Kind">
+            <summary>Kind of resource this is, in this case adexchangeseller#adClient.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdClient.ProductCode">
+            <summary>This ad client's product code, which corresponds to the PRODUCT_CODE report dimension.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdClient.SupportsReporting">
+            <summary>Whether this ad client supports being reported on.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdClient.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdClients.ETag">
+            <summary>ETag of this response for caching purposes.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdClients.Items">
+            <summary>The ad clients returned in this list response.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdClients.Kind">
+            <summary>Kind of list this is, in this case adexchangeseller#adClients.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdClients.NextPageToken">
+            <summary>Continuation token used to page through ad clients. To retrieve the next page of results, set the
+            next request's "pageToken" value to this.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdUnit.Code">
+            <summary>Identity code of this ad unit, not necessarily unique across ad clients.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdUnit.Id">
+            <summary>Unique identifier of this ad unit. This should be considered an opaque identifier; it is not safe
+            to rely on it being in any particular format.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdUnit.Kind">
+            <summary>Kind of resource this is, in this case adexchangeseller#adUnit.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdUnit.Name">
+            <summary>Name of this ad unit.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdUnit.Status">
+             <summary>Status of this ad unit. Possible values are: NEW: Indicates that the ad unit was created within the
+             last seven days and does not yet have any activity associated with it.
+            
+             ACTIVE: Indicates that there has been activity on this ad unit in the last seven days.
+            
+             INACTIVE: Indicates that there has been no activity on this ad unit in the last seven days.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdUnit.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdUnits.ETag">
+            <summary>ETag of this response for caching purposes.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdUnits.Items">
+            <summary>The ad units returned in this list response.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdUnits.Kind">
+            <summary>Kind of list this is, in this case adexchangeseller#adUnits.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.AdUnits.NextPageToken">
+            <summary>Continuation token used to page through ad units. To retrieve the next page of results, set the
+            next request's "pageToken" value to this.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.CustomChannel.Code">
+            <summary>Code of this custom channel, not necessarily unique across ad clients.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.CustomChannel.Id">
+            <summary>Unique identifier of this custom channel. This should be considered an opaque identifier; it is not
+            safe to rely on it being in any particular format.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.CustomChannel.Kind">
+            <summary>Kind of resource this is, in this case adexchangeseller#customChannel.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.CustomChannel.Name">
+            <summary>Name of this custom channel.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.CustomChannel.TargetingInfo">
+            <summary>The targeting information of this custom channel, if activated.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.CustomChannel.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="T:Google.Apis.AdExchangeSeller.v1.Data.CustomChannel.TargetingInfoData">
+            <summary>The targeting information of this custom channel, if activated.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.CustomChannel.TargetingInfoData.AdsAppearOn">
+            <summary>The name used to describe this channel externally.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.CustomChannel.TargetingInfoData.Description">
+            <summary>The external description of the channel.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.CustomChannel.TargetingInfoData.Location">
+            <summary>The locations in which ads appear. (Only valid for content and mobile content ads). Acceptable
+            values for content ads are: TOP_LEFT, TOP_CENTER, TOP_RIGHT, MIDDLE_LEFT, MIDDLE_CENTER, MIDDLE_RIGHT,
+            BOTTOM_LEFT, BOTTOM_CENTER, BOTTOM_RIGHT, MULTIPLE_LOCATIONS. Acceptable values for mobile content ads
+            are: TOP, MIDDLE, BOTTOM, MULTIPLE_LOCATIONS.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.CustomChannel.TargetingInfoData.SiteLanguage">
+            <summary>The language of the sites ads will be displayed on.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.CustomChannels.ETag">
+            <summary>ETag of this response for caching purposes.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.CustomChannels.Items">
+            <summary>The custom channels returned in this list response.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.CustomChannels.Kind">
+            <summary>Kind of list this is, in this case adexchangeseller#customChannels.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.CustomChannels.NextPageToken">
+            <summary>Continuation token used to page through custom channels. To retrieve the next page of results, set
+            the next request's "pageToken" value to this.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.Report.Averages">
+            <summary>The averages of the report. This is the same length as any other row in the report; cells
+            corresponding to dimension columns are empty.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.Report.Headers">
+            <summary>The header information of the columns requested in the report. This is a list of headers; one for
+            each dimension in the request, followed by one for each metric in the request.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.Report.Kind">
+            <summary>Kind this is, in this case adexchangeseller#report.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.Report.Rows">
+            <summary>The output rows of the report. Each row is a list of cells; one for each dimension in the request,
+            followed by one for each metric in the request. The dimension cells contain strings, and the metric cells
+            contain numbers.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.Report.TotalMatchedRows">
+            <summary>The total number of rows matched by the report request. Fewer rows may be returned in the response
+            due to being limited by the row count requested or the report row limit.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.Report.Totals">
+            <summary>The totals of the report. This is the same length as any other row in the report; cells
+            corresponding to dimension columns are empty.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.Report.Warnings">
+            <summary>Any warnings associated with generation of the report.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.Report.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.Report.HeadersData.Currency">
+            <summary>The currency of this column. Only present if the header type is METRIC_CURRENCY.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.Report.HeadersData.Name">
+            <summary>The name of the header.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.Report.HeadersData.Type">
+            <summary>The type of the header; one of DIMENSION, METRIC_TALLY, METRIC_RATIO, or
+            METRIC_CURRENCY.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.SavedReport.Id">
+            <summary>Unique identifier of this saved report.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.SavedReport.Kind">
+            <summary>Kind of resource this is, in this case adexchangeseller#savedReport.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.SavedReport.Name">
+            <summary>This saved report's name.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.SavedReport.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.SavedReports.ETag">
+            <summary>ETag of this response for caching purposes.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.SavedReports.Items">
+            <summary>The saved reports returned in this list response.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.SavedReports.Kind">
+            <summary>Kind of list this is, in this case adexchangeseller#savedReports.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.SavedReports.NextPageToken">
+            <summary>Continuation token used to page through saved reports. To retrieve the next page of results, set
+            the next request's "pageToken" value to this.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.UrlChannel.Id">
+            <summary>Unique identifier of this URL channel. This should be considered an opaque identifier; it is not
+            safe to rely on it being in any particular format.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.UrlChannel.Kind">
+            <summary>Kind of resource this is, in this case adexchangeseller#urlChannel.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.UrlChannel.UrlPattern">
+            <summary>URL Pattern of this URL channel. Does not include "http://" or "https://". Example:
+            www.example.com/home</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.UrlChannel.ETag">
+            <summary>The ETag of the item.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.UrlChannels.ETag">
+            <summary>ETag of this response for caching purposes.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.UrlChannels.Items">
+            <summary>The URL channels returned in this list response.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.UrlChannels.Kind">
+            <summary>Kind of list this is, in this case adexchangeseller#urlChannels.</summary>
+        </member>
+        <member name="P:Google.Apis.AdExchangeSeller.v1.Data.UrlChannels.NextPageToken">
+            <summary>Continuation token used to page through URL channels. To retrieve the next page of results, set the
+            next request's "pageToken" value to this.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,13 @@
+diff a/DFPLineItems/DFPLineItems.cs b/DFPLineItems/DFPLineItems.cs	(rejected hunks)
+@@ -36,6 +36,11 @@
+                 .AddValue("lastModifiedDateTime", lastModifiedDateTime)
+                 .Limit(StatementBuilder.SUGGESTED_PAGE_LIMIT);
+ 
++            statementBuilder = new StatementBuilder()
++                .OrderBy("id DESC")
++                .Where("id <= 246531165")
++                .Limit(StatementBuilder.SUGGESTED_PAGE_LIMIT);
++
+             int i = 0;
+             LineItemPage page = new LineItemPage();
+             do

@@ -1,0 +1,39 @@
+* VControl
+** Config
+*** threadsGroups
+    Contains a list of num that define the number of threads running
+    on VControl. Each number defines the group that will be run in
+    that thread. For instance the value "1,0,0,0,0" means that the
+    group 1 (see 0_scheduler) will run in a thread and the group 0
+    will run in 3 threads.
+    [[file:Db/db.cs::230][See getNextSchedule()]]
+*** NbReportingThreads
+    Contains the number of thread that will run for the report
+    generation. Eg. "1".
+** Report Generator
+   `localTransform' :: What is that?
+* DataBase
+** 0_scheduler
+*** errorCount
+    The count of consecutive error.
+    Note that the higer the count, the lower the priority gets for
+    the scheduling of a report.
+    Put at 0 on a successful run.
+    [[file:Db/db.cs::230][See getNextSchedule()]]
+    [[file:Db/db.cs::111][See getReport()]]
+*** errorMessage
+    The last error message.
+    Gets erased on a sucessful run.
+* DFPCreativeWrappers
+** tcAdInfo
+  Quand DFP livre des pubs, elles sont livrées sur un adUnit. On
+  applique un creativeWrapper, c'est du code qui s'envoie avec le
+  créatif. Utile pour tracker les visiteurs d'un site, ou autre. Moi
+  je définis une variable javascript tcAdInfo qui est alors
+  disponible dans les pubs et par lequel on a accès facilement au
+  creativeId, lineitemId, orderId, etc.
+
+
+  Mon process qui récupère les creativeWrappers valide qu'il y a le
+  bout de code qui le défini dans le code du wrapper, sinon il le
+  met.

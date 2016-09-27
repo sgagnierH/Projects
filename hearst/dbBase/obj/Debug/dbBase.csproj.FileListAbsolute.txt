@@ -1,0 +1,12 @@
+C:\Projects\hearst\bin\Debug\dbBase.dll.config
+C:\Projects\hearst\bin\Debug\dbBase.dll
+C:\Projects\hearst\bin\Debug\dbBase.pdb
+C:\Projects\hearst\dbBase\obj\Debug\dbBase.csprojResolveAssemblyReference.cache
+C:\Projects\hearst\dbBase\obj\Debug\dbBase.dll
+C:\Projects\hearst\dbBase\obj\Debug\dbBase.pdb
+D:\Projects\hearst\bin\Debug\dbBase.dll.config
+D:\Projects\hearst\bin\Debug\dbBase.dll
+D:\Projects\hearst\bin\Debug\dbBase.pdb
+D:\Projects\hearst\dbBase\obj\Debug\dbBase.csprojResolveAssemblyReference.cache
+D:\Projects\hearst\dbBase\obj\Debug\dbBase.dll
+D:\Projects\hearst\dbBase\obj\Debug\dbBase.pdb

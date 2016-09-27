@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{50C9CC2A-0664-4CFA-B72D-AEE6C91BD745}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Google.Api.Ads.AdWords</RootNamespace>
+    <AssemblyName>Google.AdWords</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdWordsErrorMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdWordsErrorMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Headers\AdWordsSoapHeader.cs" />
+    <Compile Include="Headers\RequestHeaderStub.cs" />
+    <Compile Include="Headers\ResponseHeaderStub.cs" />
+    <Compile Include="Util\BatchJob\AdWordsBulkRequestException.cs" />
+    <Compile Include="Lib\AdWordsCredentialsExpiredException.cs" />
+    <Compile Include="Lib\AdWordsException.cs" />
+    <Compile Include="Lib\AdWordsTraceListener.cs" />
+    <Compile Include="Lib\AdWordsCallListener.cs" />
+    <Compile Include="Lib\AdWordsErrorHandler.cs" />
+    <Compile Include="Util\BatchJob\BatchJobUtilitiesBase.cs" />
+    <Compile Include="Util\BatchJob\BulkJobErrorHandler.cs" />
+    <Compile Include="Util\BatchJob\CloudStorageErrorDetail.cs" />
+    <Compile Include="Util\BatchJob\CloudStorageErrorResponse.cs" />
+    <Compile Include="Util\BatchJob\v201605\BatchJobUtilities.cs" />
+    <Compile Include="Util\BatchJob\v201601\BatchJobUtilities.cs" />
+    <Compile Include="Util\BatchJob\v201509\BatchJobUtilities.cs" />
+    <Compile Include="Util\BatchJob\CloudStorageError.cs" />
+    <Compile Include="Util\BatchJob\v201603\BatchJobUtilities.cs" />
+    <Compile Include="Util\v201605\MapUtilities.cs" />
+    <Compile Include="Util\Shopping\v201605\OperationPair.cs" />
+    <Compile Include="Util\Shopping\v201605\ProductDimensionEqualityComparer.cs" />
+    <Compile Include="Util\Shopping\v201605\ProductDimensions.cs" />
+    <Compile Include="Util\Shopping\v201605\ProductPartitionNode.cs" />
+    <Compile Include="Util\Shopping\v201605\ProductPartitionNodeAdapter.cs" />
+    <Compile Include="Util\Shopping\v201605\ProductPartitionTree.cs" />
+    <Compile Include="Util\Shopping\v201603\OperationPair.cs" />
+    <Compile Include="Util\Shopping\v201603\ProductDimensionEqualityComparer.cs" />
+    <Compile Include="Util\Shopping\v201603\ProductDimensions.cs" />
+    <Compile Include="Util\Shopping\v201603\ProductPartitionNode.cs" />
+    <Compile Include="Util\Shopping\v201603\ProductPartitionNodeAdapter.cs" />
+    <Compile Include="Util\Shopping\v201603\ProductPartitionTree.cs" />
+    <Compile Include="Util\v201601\MapUtilities.cs" />
+    <Compile Include="Util\Selectors\BaseFields.cs" />
+    <Compile Include="Util\Shopping\BiddableUnitState.cs" />
+    <Compile Include="Util\Shopping\v201601\OperationPair.cs" />
+    <Compile Include="Util\Shopping\v201601\ProductDimensionEqualityComparer.cs" />
+    <Compile Include="Util\Shopping\v201601\ProductDimensions.cs" />
+    <Compile Include="Util\Shopping\v201601\ProductPartitionNode.cs" />
+    <Compile Include="Util\Shopping\v201601\ProductPartitionNodeAdapter.cs" />
+    <Compile Include="Util\Shopping\v201601\ProductPartitionTree.cs" />
+    <Compile Include="Util\Shopping\ExcludedUnitState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\Shopping\NodeDifference.cs" />
+    <Compile Include="Util\Shopping\NodeState.cs" />
+    <Compile Include="Util\Shopping\NodeType.cs" />
+    <Compile Include="Util\Shopping\ShoppingMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Shopping\SubdivisionState.cs" />
+    <Compile Include="Util\v201603\MapUtilities.cs" />
+    <Compile Include="v201509\AdWordsApi.ProductDimension.cs" />
+    <Compile Include="Util\Shopping\v201509\OperationPair.cs" />
+    <Compile Include="Util\Shopping\v201509\ProductDimensionEqualityComparer.cs" />
+    <Compile Include="Util\Shopping\v201509\ProductDimensions.cs" />
+    <Compile Include="Util\Shopping\v201509\ProductPartitionNode.cs" />
+    <Compile Include="Util\Shopping\v201509\ProductPartitionNodeAdapter.cs" />
+    <Compile Include="Util\Shopping\v201509\ProductPartitionTree.cs" />
+    <Compile Include="Util\v201509\MapUtilities.cs" />
+    <Compile Include="Util\Reports\New\IReportDefinition.cs" />
+    <Compile Include="Util\Reports\New\ReportUtilities.cs" />
+    <Compile Include="Util\ErrorUtilities.cs" />
+    <Compile Include="Util\Reports\New\ReportDownloadError.cs" />
+    <Compile Include="Util\Reports\New\AdWordsReportsException.cs" />
+    <Compile Include="Headers\ResponseHeader.cs" />
+    <Compile Include="Headers\RequestHeader.cs" />
+    <Compile Include="Lib\ApiCallEntry.cs" />
+    <Compile Include="Lib\AdWordsServiceSignature.cs" />
+    <Compile Include="Lib\AdWordsApiException.cs" />
+    <Compile Include="Lib\AdWordsSoapClient.cs" />
+    <Compile Include="Lib\AdWordsServiceFactory.cs" />
+    <Compile Include="Lib\AdWordsAppConfig.cs" />
+    <Compile Include="Lib\AdWordsService.cs" />
+    <Compile Include="Lib\AdWordsUser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Properties.cs" />
+    <Compile Include="Util\Selectors\Field.cs" />
+    <Compile Include="v201509\AdWordsApi.cs" />
+    <Compile Include="v201509\AdWordsServiceV201509.cs" />
+    <Compile Include="v201509\ApiError.cs" />
+    <Compile Include="v201509\BatchJobApi.cs" />
+    <Compile Include="v201509\ApiException.cs" />
+    <Compile Include="v201509\FeedValidationErrors.cs" />
+    <Compile Include="v201509\OrderBy.cs" />
+    <Compile Include="v201509\Paging.cs" />
+    <Compile Include="v201509\Predicate.cs" />
+    <Compile Include="v201509\ReportDefinition.cs" />
+    <Compile Include="v201601\AdWordsApi.cs" />
+    <Compile Include="v201601\AdWordsApi.ProductDimension.cs" />
+    <Compile Include="v201601\AdWordsServiceV201601.cs" />
+    <Compile Include="v201601\ApiError.cs" />
+    <Compile Include="v201601\ApiException.cs" />
+    <Compile Include="v201601\BatchJobApi.cs" />
+    <Compile Include="v201601\FeedValidationErrors.cs" />
+    <Compile Include="v201601\OrderBy.cs" />
+    <Compile Include="v201601\Paging.cs" />
+    <Compile Include="v201601\Predicate.cs" />
+    <Compile Include="v201601\ReportDefinition.cs" />
+    <Compile Include="v201603\AdWordsApi.cs" />
+    <Compile Include="v201603\AdWordsApi.ProductDimension.cs" />
+    <Compile Include="v201603\AdWordsServiceV201603.cs" />
+    <Compile Include="v201603\ApiError.cs" />
+    <Compile Include="v201603\ApiException.cs" />
+    <Compile Include="v201603\BatchJobApi.cs" />
+    <Compile Include="v201603\FeedValidationErrors.cs" />
+    <Compile Include="v201603\OrderBy.cs" />
+    <Compile Include="v201603\Paging.cs" />
+    <Compile Include="v201603\Predicate.cs" />
+    <Compile Include="v201603\ReportDefinition.cs" />
+    <Compile Include="v201605\AdWordsApi.cs" />
+    <Compile Include="v201605\AdWordsApi.ProductDimension.cs" />
+    <Compile Include="v201605\AdWordsServiceV201605.cs" />
+    <Compile Include="v201605\ApiError.cs" />
+    <Compile Include="v201605\ApiException.cs" />
+    <Compile Include="v201605\BatchJobApi.cs" />
+    <Compile Include="v201605\FeedValidationErrors.cs" />
+    <Compile Include="v201605\OrderBy.cs" />
+    <Compile Include="v201605\Paging.cs" />
+    <Compile Include="v201605\Predicate.cs" />
+    <Compile Include="v201605\ReportDefinition.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdWordsErrorMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AdWordsErrorMessages.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\Shopping\ShoppingMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ShoppingMessages.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{277404DB-A439-4450-B3A5-186294CDF245}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

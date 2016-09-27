@@ -1,0 +1,14 @@
+C:\Projects\hearst\LineItemUpdate\LineItemUpdate\obj\Debug\LineItemUpdate.csprojResolveAssemblyReference.cache
+C:\Projects\hearst\LineItemUpdate\LineItemUpdate\bin\Debug\LineItemUpdate.exe.config
+C:\Projects\hearst\LineItemUpdate\LineItemUpdate\bin\Debug\LineItemUpdate.exe
+C:\Projects\hearst\LineItemUpdate\LineItemUpdate\bin\Debug\LineItemUpdate.pdb
+C:\Projects\hearst\LineItemUpdate\LineItemUpdate\bin\Debug\BouncyCastle.Crypto.dll
+C:\Projects\hearst\LineItemUpdate\LineItemUpdate\bin\Debug\Google.Ads.Common.dll
+C:\Projects\hearst\LineItemUpdate\LineItemUpdate\bin\Debug\Google.Dfp.dll
+C:\Projects\hearst\LineItemUpdate\LineItemUpdate\bin\Debug\OAuth2.dll
+C:\Projects\hearst\LineItemUpdate\LineItemUpdate\bin\Debug\OAuth2.pdb
+C:\Projects\hearst\LineItemUpdate\LineItemUpdate\bin\Debug\BouncyCastle.Crypto.pdb
+C:\Projects\hearst\LineItemUpdate\LineItemUpdate\bin\Debug\Google.Ads.Common.xml
+C:\Projects\hearst\LineItemUpdate\LineItemUpdate\bin\Debug\Google.Dfp.xml
+C:\Projects\hearst\LineItemUpdate\LineItemUpdate\obj\Debug\LineItemUpdate.exe
+C:\Projects\hearst\LineItemUpdate\LineItemUpdate\obj\Debug\LineItemUpdate.pdb

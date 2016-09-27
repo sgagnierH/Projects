@@ -1,0 +1,5 @@
+C:\Projects\hearst\bin\Release\dbBase.dll.config
+C:\Projects\hearst\bin\Release\dbBase.dll
+C:\Projects\hearst\bin\Release\dbBase.pdb
+C:\Projects\hearst\dbBase\obj\Release\dbBase.dll
+C:\Projects\hearst\dbBase\obj\Release\dbBase.pdb

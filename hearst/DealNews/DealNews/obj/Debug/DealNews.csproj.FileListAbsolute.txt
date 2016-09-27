@@ -1,0 +1,57 @@
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\DealNews.exe.config
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\DealNews.exe
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\DealNews.pdb
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\BouncyCastle.Crypto.dll
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\Google.Ads.Common.dll
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\Google.Apis.Core.dll
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\Google.Apis.dll
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\Google.Apis.PlatformServices.dll
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\Google.Dfp.dll
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\log4net.dll
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\Newtonsoft.Json.dll
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\OAuth2.dll
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\Zlib.Portable.dll
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\BouncyCastle.Crypto.pdb
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\Google.Ads.Common.xml
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\Google.Apis.pdb
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\Google.Apis.xml
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\Google.Apis.Core.pdb
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\Google.Apis.Core.xml
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\Google.Apis.PlatformServices.pdb
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\Google.Apis.PlatformServices.xml
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\Google.Dfp.xml
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\log4net.xml
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\Newtonsoft.Json.xml
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\OAuth2.pdb
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\bin\Debug\Zlib.Portable.xml
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\obj\Debug\DealNews.exe
+c:\users\sgagn\documents\visual studio 2015\Projects\DealNews\DealNews\obj\Debug\DealNews.pdb
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\DealNews.exe.config
+C:\Projects\hearst\DealNews\DealNews\obj\Debug\DealNews.exe
+C:\Projects\hearst\DealNews\DealNews\obj\Debug\DealNews.pdb
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\DealNews.exe
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\DealNews.pdb
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\BouncyCastle.Crypto.dll
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\Google.Ads.Common.dll
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\Google.Apis.Core.dll
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\Google.Apis.dll
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\Google.Dfp.dll
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\log4net.dll
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\OAuth2.dll
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\Zlib.Portable.dll
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\BouncyCastle.Crypto.pdb
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\Google.Ads.Common.xml
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\Google.Apis.pdb
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\Google.Apis.xml
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\Google.Apis.Core.pdb
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\Google.Apis.Core.xml
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\Google.Apis.PlatformServices.pdb
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\Google.Apis.PlatformServices.xml
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\Google.Dfp.xml
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\log4net.xml
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\OAuth2.pdb
+C:\Projects\hearst\DealNews\DealNews\bin\Debug\Zlib.Portable.xml
+C:\Projects\hearst\DealNews\DealNews\obj\Debug\DealNews.csprojResolveAssemblyReference.cache

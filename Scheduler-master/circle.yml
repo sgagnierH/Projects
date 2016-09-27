@@ -1,0 +1,7 @@
+checkout:
+  post:
+    - echo Yippiee
+
+test:
+  override:
+    - echo Shut up.

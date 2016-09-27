@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DFPUploader", "DFPUploader.csproj", "{AEFDC96D-3C12-4850-BDF8-CCD279B3BE74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkamiInfo", "AkamiInfo\AkamiInfo.csproj", "{4DDF0041-4153-4D8D-9275-A3113615F0F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkamiUpload", "AkamiUpload\AkamiUpload.csproj", "{1D65CED8-99B1-498C-A091-CEBF938ABDF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEFDC96D-3C12-4850-BDF8-CCD279B3BE74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEFDC96D-3C12-4850-BDF8-CCD279B3BE74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEFDC96D-3C12-4850-BDF8-CCD279B3BE74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEFDC96D-3C12-4850-BDF8-CCD279B3BE74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DDF0041-4153-4D8D-9275-A3113615F0F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DDF0041-4153-4D8D-9275-A3113615F0F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DDF0041-4153-4D8D-9275-A3113615F0F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DDF0041-4153-4D8D-9275-A3113615F0F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D65CED8-99B1-498C-A091-CEBF938ABDF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D65CED8-99B1-498C-A091-CEBF938ABDF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D65CED8-99B1-498C-A091-CEBF938ABDF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D65CED8-99B1-498C-A091-CEBF938ABDF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
